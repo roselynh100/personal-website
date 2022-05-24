@@ -1,14 +1,14 @@
 <template>
 
-    <div class="flex">
+    <div class="flex py-5 items-center">
 
-        <p class="bg-red-300">hi</p>
+        <img src="../assets/cloud.png" class="h-14 md:h-20">
 
-        <div class="flex text-xl bg-sky-300 grow justify-end">
+        <div class="flex text-xl grow justify-end">
 
-            <a v-for="item in navBar" :href="item.router" class="hover:underline decoration-indigo-300 decoration-4 ml-10">
+            <router-link v-for="item in navBar" class="hover:underline decoration-indigo-300 decoration-4 ml-10">
                 {{item.name}}
-            </a>
+            </router-link>
 
         </div>
         
@@ -19,9 +19,9 @@
 <script setup>
 
 const navBar = [
-    {name: "Home", router: ""},
-    {name: "About", router: ""},
-    {name: "Resume", router: "https://drive.google.com/file/d/1LLHgTjFQ4c_P6JZcs035xbDp771KYlde/view"}
+    {name: "Home", router: "/"},
+    {name: "About", router: "/about"},
+    {name: "Resume", router: "https://drive.google.com/file/d/1LLHgTjFQ4c_P6JZcs035xbDp771KYlde/view", newTab: true}
 ]
 
 </script>

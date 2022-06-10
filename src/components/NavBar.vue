@@ -1,6 +1,6 @@
 <template>
 
-    <div class="flex py-5 items-center">
+    <div class="flex py-5 items-center text-indigo-600">
 
         <img src="../assets/cloud.png" class="h-14 md:h-20">
 

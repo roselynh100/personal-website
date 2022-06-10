@@ -6,7 +6,7 @@
             <p class="text-xl mb-5">Hello there — thanks for checking out my website!</p>
             <p class="text-xl mb-5">My name is Roselyn Huynh (pronounced rose-lyn who-in)! I am currently a
                 <a href="https://uwaterloo.ca/systems-design-engineering/" target="_blank" class="underline decoration-indigo-300 font-semibold">Systems Design Engineering</a> student at uWaterloo with an expected graduation date in April of 2026.</p>
-            <p class="text-xl mb-5">I'm a creative designer with an interest in the technical side of things. I love building websites and finding innovate solutions to mundane problems. Previously, I've developed cool things with the <a href="https://www.canada.ca/en.html" target="_blank" class="underline decoration-indigo-300 font-semibold">Government of Canada</a>.</p>
+            <p class="text-xl mb-5">I'm a creative designer with an interest in the technical side of things. I love building websites and finding innovative solutions to mundane problems. Previously, I've developed cool things with the <a href="https://www.canada.ca/en.html" target="_blank" class="underline decoration-indigo-300 font-semibold">Government of Canada</a>.</p>
             <p class="text-xl mb-10">On campus, you can find me playing the alto saxophone with
                 <a href="https://uwcbc.uwaterloo.ca/" target="_blank" class="underline decoration-indigo-300 font-semibold">UW Concert Band Club</a>, representing my class with the 
                 <a href="https://www.engsoc.uwaterloo.ca/" target="_blank" class="underline decoration-indigo-300 font-semibold">Engineering Society</a>, or building a satellite with
@@ -19,12 +19,5 @@
             <img src="../assets/shiba.JPG" class="w-full md:w-96">
         </div>
     </div>
-    <Footer />
 
 </template>
-
-<script setup>
-
-import Footer from '../components/Footer.vue'
-
-</script>

@@ -17,6 +17,7 @@ const icons = [
     {name: "fa-regular fa-envelope", link: "mailto:roselyn.huynh@uwaterloo.ca"},
     {name: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/roselynhuynh/"},
     {name: "fa-brands fa-github", link: "https://github.com/roselynh100"},
+    {name: "fa-brands fa-spotify", link: "https://open.spotify.com/user/roselynh100?si=929d34d11afa4619"}
 
 ]
 

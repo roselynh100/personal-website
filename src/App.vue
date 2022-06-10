@@ -6,7 +6,7 @@ import Footer from './components/Footer.vue'
 
 <template>
 
-    <div class="container mx-auto bg-slate-0 max-w-5xl px-10" id="app">
+    <div class="container mx-auto bg-slate-0 max-w-5xl px-10 selection:bg-indigo-300 selection:text-white" id="app">
 
         <nav>
             <div class="flex py-5 items-center">
@@ -20,7 +20,12 @@ import Footer from './components/Footer.vue'
         </nav>
 
         <main>
-            <router-view />
+            <router-view v-slot="{ Component }">
+                <transition name="fade" mode="out-in">
+                    <component :is="Component" />
+                </transition>
+            </router-view>
+            <Footer />
         </main>
 
     </div>

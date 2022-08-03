@@ -2,7 +2,7 @@
 
     <div class="mb-5">
 
-        <p class="mb-3">Designed and developed by Roselyn Huynh 2022</p>
+        <p class="mb-3">Designed and developed with 💜 by Roselyn Huynh</p>
         <a v-for="icon in icons" :href="icon.link" target="_blank">
             <i :class="'mr-5 fa-xl ' + icon.name"></i>
         </a>

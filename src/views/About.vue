@@ -15,8 +15,8 @@
             <a href="mailto:roselyn.huynh@uwaterloo.ca"><button class="text-xl font-semibold border border-indigo-300 border-2 rounded bg-white hover:bg-indigo-300 hover:text-white drop-shadow-xl py-2 px-5 mb-5">Send me a message!</button></a>
         </div>
         <div class="mb-5">
-            <img src="../assets/colour_run.JPG" class="w-full md:w-96 mb-5">
-            <img src="../assets/shiba.JPG" class="w-full md:w-96">
+            <img src="../assets/colourrun.png" class="w-full md:w-96 mb-5">
+            <img src="../assets/shiba.png" class="w-full md:w-96">
         </div>
     </div>
 

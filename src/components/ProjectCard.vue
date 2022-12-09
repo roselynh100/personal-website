@@ -1,5 +1,5 @@
 <template>
-    <div class="md:w-[calc(50%-3rem)] mb-10 bg-white border-indigo-300 border-2 rounded-lg hover:drop-shadow-2xl">
+    <div class="md:w-[calc(50%-3rem)] mb-10 bg-white border-indigo-300 border-2 rounded-lg hover:drop-shadow-2xl transition ease-in-out duration-300">
         <img :src="image" class="object-cover rounded-md">
         <div class="px-10 py-5">
             <div class="flex items-center mb-2">
@@ -10,8 +10,8 @@
                 </div>
             </div>
             <p class="italic mb-2">{{tagline}}</p>
-            <a :href="code" target="_blank"><button v-if="props.code" class="font-semibold border-indigo-300 border-2 rounded bg-white hover:bg-indigo-300 hover:text-white drop-shadow-xl py-1 px-5 my-5 mr-5">Code</button></a>
-            <a :href="demo" target="_blank"><button v-if="props.demo" class="font-semibold border-indigo-300 border-2 rounded bg-white hover:bg-indigo-300 hover:text-white drop-shadow-xl py-1 px-5 my-5 mr-5">Demo</button></a>
+            <a :href="code" target="_blank"><button v-if="props.code" class="font-semibold border-indigo-300 border-2 rounded bg-white hover:bg-indigo-300 hover:text-white transition ease-in-out drop-shadow-xl py-1 px-5 my-5 mr-5">Code</button></a>
+            <a :href="demo" target="_blank"><button v-if="props.demo" class="font-semibold border-indigo-300 border-2 rounded bg-white hover:bg-indigo-300 hover:text-white transition ease-in-out drop-shadow-xl py-1 px-5 my-5 mr-5">Demo</button></a>
         </div>
     </div>
 

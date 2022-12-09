@@ -1,27 +1,25 @@
 <template>
 
-    <div class="flex py-5 items-center text-indigo-600">
-
-        <img src="../assets/cloud.png" class="h-14 md:h-20">
-
-        <div class="flex text-xl grow justify-end">
-
-            <router-link v-for="item in navBar" class="hover:underline decoration-indigo-300 decoration-4 ml-10">
-                {{item.name}}
-            </router-link>
-
+    <nav>
+        <div class="flex py-5 items-center">
+            <router-link to="/"><img src="../assets/cloud.png" class="invisible sm:visible h-14 md:h-20"></router-link>
+            <div class="flex text-xl grow justify-end">
+                <router-link v-for="route in routes" :to="route.to" class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10">
+                    {{route.name}}
+                </router-link>
+                <a href="https://drive.google.com/file/d/1lhF5T1gIQGm15p_vBljebVH9LZnlpKhF/view?usp=sharing" class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10" target="_blank">Resume</a>
+            </div>
         </div>
-        
-    </div>
+    </nav>
 
 </template>
 
 <script setup>
 
-const navBar = [
-    {name: "Home", router: "/"},
-    {name: "About", router: "/about"},
-    {name: "Resume", router: "https://drive.google.com/file/d/1LLHgTjFQ4c_P6JZcs035xbDp771KYlde/view", newTab: true}
+const routes = [
+    {name: "Home", to: "/"},
+    {name: "About", to: "/about"}
 ]
+
 
 </script>

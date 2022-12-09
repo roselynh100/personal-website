@@ -1,8 +1,11 @@
 <template>
 
-    <Opening />
-    <Projects />
-    <!-- <Footer /> -->
+    <div v-motion
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 1000 } }">
+        <Opening />
+        <Projects />
+    </div>
 
 </template>
 
@@ -10,6 +13,5 @@
 
 import Opening from '../components/Opening.vue'
 import Projects from '../components/Projects.vue'
-// import Footer from '../components/Footer.vue'
 
 </script>

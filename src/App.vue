@@ -1,12 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
-import Home from './views/Home.vue'
 import Footer from './components/Footer.vue'
 
-const routes = [
-    {name: "Home", to: "/"},
-    {name: "About", to: "/about"}
-]
 </script>
 
 <template>
@@ -15,23 +10,11 @@ const routes = [
         
         <div class="container mx-auto bg-slate-0 max-w-5xl px-10 selection:bg-indigo-300 selection:text-white">
 
-            <nav>
-                <div class="flex py-5 items-center">
-                    <router-link to="/"><img src="./assets/cloud.png" class="h-14 md:h-20"></router-link>
-                    <div class="flex text-xl grow justify-end">
-                        <router-link v-for="route in routes" :to="route.to" class="hover:underline decoration-indigo-300 decoration-4 ml-10">
-                            {{route.name}}
-                        </router-link>
-                        <a href="https://drive.google.com/file/d/1LLHgTjFQ4c_P6JZcs035xbDp771KYlde/view" class="hover:underline decoration-indigo-300 decoration-4 ml-10" target="_blank">Resume</a>
-                    </div>
-                </div>
-            </nav>
+            <NavBar />
 
             <main>
                 <router-view v-slot="{ Component }">
-                    <!-- <transition name="fade" mode="out-in"> -->
-                        <component :is="Component" />
-                    <!-- </transition> -->
+                    <component :is="Component" />
                 </router-view>
                 <Footer />
             </main>

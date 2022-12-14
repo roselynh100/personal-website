@@ -18,7 +18,8 @@
 
 const routes = [
     {name: "Home", to: "/"},
-    {name: "About", to: "/about"}
+    {name: "About", to: "/about"},
+    {name: "Fun Stuff", to: "/funstuff"}
 ]
 
 

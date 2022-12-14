@@ -5,7 +5,7 @@
             <div class="flex items-center mb-2">
                 <p class="text-2xl font-bold mr-3">{{name}}</p>
                 <div class="flex">
-                    <p v-if="extra" class="text-md mr-2">🏆</p>
+                    <p v-if="won" class="text-md mr-2">🏆</p>
                     <p v-if="extra" class="text-sm text-white font-semibold bg-indigo-300 px-1 py-0.5 rounded">{{extra}}</p>
                 </div>
             </div>
@@ -24,6 +24,7 @@ let props = defineProps({
     tagline: {type: String, default: "Project Tagline"},
     time: {type: String, default: "Time"},
     image: {type: String, default: "https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/7f2dae36-5650-4b84-b184-684f46fe68aa/98.jpg"},
+    won: {type: Boolean},
     extra: {type: String},
     router: {type: String},
     demo: {type:String},

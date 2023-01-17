@@ -7,7 +7,7 @@
                 <router-link v-for="route in routes" :to="route.to" class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10">
                     {{route.name}}
                 </router-link>
-                <a href="https://drive.google.com/file/d/1lhF5T1gIQGm15p_vBljebVH9LZnlpKhF/view?usp=sharing" class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10" target="_blank">Resume</a>
+                <a href="https://drive.google.com/file/d/1ULXEtL28BBoNuffCDTv8LFWHNqkgpB9f/view?usp=sharing" class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10" target="_blank">Resume</a>
             </div>
         </div>
     </nav>

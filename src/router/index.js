@@ -5,26 +5,30 @@ import About from '../views/About.vue'
 import FunStuff from '../views/FunStuff.vue'
 
 const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: Home
-    },
-    {
-        path: '/about',
-        name: 'About',
-        component: About
-    },
-    {
-        path: '/funstuff',
-        name: 'Fun Stuff',
-        component: FunStuff
-    },
+	{
+		path: '/',
+		name: 'Home',
+		component: Home
+	},
+	{
+		path: '/about',
+		name: 'About',
+		component: About
+	},
+	{
+		path: '/funstuff',
+		name: 'Fun Stuff',
+		component: FunStuff
+	},
+	{
+		path: '/:catchAll(.*)',
+		component: Home
+	}
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
-});
+	history: createWebHistory(),
+	routes
+})
 
 export default router

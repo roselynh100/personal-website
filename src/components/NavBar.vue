@@ -14,12 +14,12 @@
 				>
 					{{ route.name }}
 				</router-link>
-				<button
+				<!-- <button
 					@click="openResume"
 					class="hover:underline decoration-wavy decoration-indigo-300 decoration-2 ml-10"
 				>
 					Resume
-				</button>
+				</button> -->
 			</div>
 		</div>
 	</nav>

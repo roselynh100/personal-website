@@ -9,12 +9,15 @@
 		<p class="text-xl md:text-2xl font-semibold mb-3">
 			I'm a curious software developer studying Engineering @ uWaterloo.
 		</p>
-		<p class="text-xl md:text-2xl font-semibold">
+		<p class="text-xl md:text-2xl font-semibold mb-2">
 			Currently seeking
 			<span
 				class="italic animate-pulse hover:underline hover:decoration-wavy hover:decoration-indigo-300 hover:animate-none"
-				>Winter 2024 internships!</span
+				data-tooltip-target="tooltip-default"
 			>
+				Winter and Summer 2025 internships!
+			</span>
 		</p>
+		<p class="text-lg font-semibold italic">(Open to 4 or 8 months!)</p>
 	</div>
 </template>

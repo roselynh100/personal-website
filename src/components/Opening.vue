@@ -15,9 +15,8 @@
 				class="italic animate-pulse hover:underline hover:decoration-wavy hover:decoration-indigo-300 hover:animate-none"
 				data-tooltip-target="tooltip-default"
 			>
-				Winter and Summer 2025 internships!
+				Summer 2025 internships!
 			</span>
 		</p>
-		<p class="text-lg font-semibold italic">(Open to 4 or 8 months!)</p>
 	</div>
 </template>
